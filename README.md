@@ -1,5 +1,44 @@
-# KTB3_NJ_Full
-카카오테크 부트캠프 3기 풀스택 과정 nj 과제 저장소입니다.
+# KTB3_Full — Week1 / Week2 과제
+> 카카오테크 부트캠프 3기 풀스택 과정 NJ 1,2주차 과제 저장소입니다.
+
+---
+
+## 🏡 프로젝트 개요
+
+**콘솔 기반 병원 진료 시뮬레이션**으로, 환자 접수 → 진료 → 수납 흐름을 사용자 입력으로 시연합니다.
+
+Week1: 프로그램 클래스 설계도(다이어그램) 작성 및 설계도 기반 콘솔 프로그램 제작
+
+Week2: CLI 프로그램 제작(동기 프로그램을 비동기 프로그램으로 만들기)
+
+---
+
+## 📝 프로그램 설계
+### 1. 다이어그램 작성
+   <img width="1440" height="884" alt="image" src="https://github.com/user-attachments/assets/6bf78220-2cb0-47d7-93d7-ae6372533c5a" />
 
 
-<img width="1440" height="884" alt="image" src="https://github.com/user-attachments/assets/6bf78220-2cb0-47d7-93d7-ae6372533c5a" />
+### 2. 동기 프로그램 구현
+
+환자가 병원에 찾아와서 ”접수 → 진료 → 수납”의 단계를 거치는 과정을 담은 CLI 프로그램을 구현해보았습니다.
+과제 조건인 2차 상속으로 '사람-의사-전문의사' 의 의존을 생각해서 구현해보았습니다.
+
+### 3. 비동기 프로그램 구현
+
+환자가 병원에 들어와서 접수, 진료, 수납을 하는 전체 과정의 메인 로직과
+부가 기능의 별도의 스레드를 실행시켜 병원 시뮬레이션을 비동기적으로 구현했습니다.
+
+환자가 들어온 뒤에는 시간 쓰레드(1️⃣CheckTime 클래스)가 시간을 기록하고,
+현황 쓰레드(2️⃣CheckStatus 클래스)가 상태 변화를 출력하여 환자의 병원 진료 상황을 실시간으로 확인할 수 있습니다.
+
+---
+
+## 🖥️ 실행 화면
+![Image](https://github.com/user-attachments/assets/d5a81e01-c6ea-4ae2-b9df-24f660452ca6)
+
+---
+
+## 💬회고
+[week1 회고](https://www.notion.so/1-269369efc3f6807f8e87d048c86a1bd7?source=copy_link)
+
+[week2 회고](https://www.notion.so/2-270369efc3f680b49248da11a973bf0e?source=copy_link)
